@@ -1,0 +1,252 @@
+.filter-hotels {
+  background-image: url(../images/filter-hotels-background.png);
+}
+
+.filter-hotels-form {
+  display: flex;
+  padding: 26px 73px 32px 72px;
+  justify-content: space-between;
+}
+
+.filter-hotels-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 23px;
+}
+
+.filter-group-container {
+  display: flex;
+  /*flex-direction: row;*/
+  width: 46%;
+}
+
+.filter-hotels-form fieldset legend {
+  margin-bottom: 24px;
+}
+
+.filter-range {
+  width: 330px;
+  margin: auto;
+  color: #ffffff;
+  /*text-align: center;*/
+}
+
+.filter-range .btn {
+  width: auto;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.price-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  margin-top: -2px;
+  height: 36px;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 19px;
+  height: 21px;
+  background-image: url(../images/filter-button.png);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-image: url(../images/filter-button-hover.png);
+  width: 23px;
+  height: 24px;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn_transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hotels-list-sort {
+  display: flex;
+  padding: 29px 73px 31px;
+  gap: 42px;
+}
+
+.hotels-list li {
+  padding: 23px 71px 0px 73px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotels-list li:nth-child(odd) {
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.hotel-photo-description-container {
+  display: flex;
+}
+
+.hotels-list li img {
+  margin-top: 7px;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.hotel-description-container {
+  margin-left: 29px;
+}
+
+.hotel-description-type-price-btn-container {
+  display: flex;
+  gap: 6px;
+}
+
+.hotel-description-type-btn-container,
+.hotel-description-price-btn-container {
+  margin-top: 7px;
+}
+
+.hotel-description-type-btn-container .btn {
+  margin-top: 15px;
+}
+
+.hotel-description-price-btn-container .btn {
+  margin-top: 15px;
+}
+
+.rate {
+  text-align: right;
+  margin-top: 6px;
+}
+
+.rate-stars {
+  height: 19px;
+}
+
+.rate-value {
+  margin-top: 47px;
+  max-width: 115px;
+  background-color: #F2F2F2;
+  padding: 3px 12px 3px 15px;
+}
+
+@media (max-width: 761px) and (min-width: 451px) {
+  .site-menu {
+    height: 70px;
+  }
+  .filter-hotels {
+    background-image: none;
+    background-color: #333333;
+    opacity: 40%;
+  }
+  .filter-hotels-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .filter-hotels-form * {
+    text-align: center;
+  }
+  .filter-group-container {
+    width: 100%;
+  }
+  .hotels-list-sort {
+    flex-direction: column;
+  }
+  .hotels-list li {
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .rate-value {
+    margin-top: 5px;
+  }
+  .copyright {
+    flex-direction: column;
+  }
+}
+
