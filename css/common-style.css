@@ -42,6 +42,10 @@ body {
   font-size: 14px;
   line-height: 26px;
 }
+
+.site-menu li a img {
+  margin-top: -15px;
+}
 /*---------------------------------------------*/
 
 
